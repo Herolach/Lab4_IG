@@ -63,6 +63,9 @@
     <ClInclude Include="skybox_technique.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="engine_common.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pipeline.cpp">
