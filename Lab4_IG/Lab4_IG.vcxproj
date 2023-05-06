@@ -126,7 +126,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CORE_RL_Magick++_.lib;CORE_RL_MagickCore_.lib;CORE_RL_MagickWand_.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CORE_RL_Magick++_.lib;CORE_RL_MagickCore_.lib;CORE_RL_MagickWand_.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClInclude Include="callbacks.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="cubemap_texture.h" />
     <ClInclude Include="glut_backend.h" />
     <ClInclude Include="lighting_technique.h" />
     <ClInclude Include="math_3d.h" />
@@ -142,12 +143,15 @@
     <ClInclude Include="pipeline.h" />
     <ClInclude Include="shadow_map_fbo.h" />
     <ClInclude Include="shadow_map_technique.h" />
+    <ClInclude Include="skybox.h" />
+    <ClInclude Include="skybox_technique.h" />
     <ClInclude Include="technique.h" />
     <ClInclude Include="texture.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="cubemap_texture.cpp" />
     <ClCompile Include="glut_backend.cpp" />
     <ClCompile Include="lighting_technique.cpp" />
     <ClCompile Include="main.cpp" />
@@ -156,6 +160,8 @@
     <ClCompile Include="pipeline.cpp" />
     <ClCompile Include="shadow_map_fbo.cpp" />
     <ClCompile Include="shadow_map_technique.cpp" />
+    <ClCompile Include="skybox.cpp" />
+    <ClCompile Include="skybox_technique.cpp" />
     <ClCompile Include="technique.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
